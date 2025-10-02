@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masomo WiFi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+    .logo {
+      margin: 15px 0 25px;
+    }
+    .logo img {
+      max-width: 140px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn {
+      display: block;
+      padding: 14px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    /* Button colors */
+    .btn-buy { background: #27ae60; }       /* Green */
+    .btn-router { background: #2980b9; }    /* Blue */
+    .btn-add { background: #8e44ad; }       /* Purple */
+    .btn-signup { background: #e67e22; }    /* Orange */
+    .btn-mypkg { background: #16a085; }     /* Teal */
+    .btn-editpkg { background: #c0392b; }   /* Red */
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      .btn { font-size: 16px; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Masomo WiFi</h1>
+
+  <div class="logo">
+    <!-- Replace src with your logo URL -->
+    <img src="https://via.placeholder.com/140x140.png?text=Logo" alt="Masomo WiFi Logo">
+  </div>
+
+  <div class="btn-container">
+    <a class="btn btn-buy" href="https://script.google.com/macros/s/AKfycbyzVG18wFaaNQPwP1iTc7zPSGqxJ3u-ATQXnFOY7M6llzxPo4GmODNNf02e9jn7Y6bn/exec?router=R080393">Buy WiFi</a>
+    <a class="btn btn-router" href="https://script.google.com/macros/s/AKfycbzaYJHao2DSP1x6_8u_P1tGRaCHimYQYlI4aZg22m9mcRqyD24J1WFe3llSuH3pSAQW/exec">View/Edit Router</a>
+    <a class="btn btn-add" href="https://script.google.com/macros/s/AKfycbx181Dqdzwlg8R39ndc_7vejgIhOvWUoulR1waVArUQOvBDUN1_TNvJrFI5_EFd_IvtLg/exec">Add Router</a>
+    <a class="btn btn-signup" href="https://script.google.com/macros/s/AKfycbzNHoCwny6YpW9Eq20dQffxDN8l9afBsTr2MHOmxgNdNehtur8WSaqLQAApMp_cPTVykA/exec">Seller Sign Up</a>
+    <a class="btn btn-mypkg" href="https://script.google.com/macros/s/AKfycbzoE0Yc8uoaPKQfXFX1YZjk57EC6ERNGTW5tP36ReOpa0ymYLIlEBJE5Q7u2xXiW1r8/exec">My Packages</a>
+    <a class="btn btn-editpkg" href="https://script.google.com/macros/s/AKfycbzzElViZINireNe-En1-VcdquR5zny3Rp_pi5kh8SPmB4EOGxFKkV3k26pEMHViB1PY/exec">View/Edit Packages</a>
+  </div>
+
+</body>
+</html>
