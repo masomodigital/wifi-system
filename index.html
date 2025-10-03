@@ -24,20 +24,27 @@
       color: #2c3e50;
     }
     .logo {
-      margin: 15px 0 25px;
+      margin: 15px 0 15px;
     }
     .logo img {
       max-width: 140px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
+    .description {
+      max-width: 500px;
+      margin: 10px 0 25px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
     .btn-container {
       display: flex;
       flex-direction: column;
       gap: 15px;
       width: 100%;
       max-width: 400px;
+      margin-bottom: 30px;
     }
     .btn {
       display: block;
@@ -64,9 +71,22 @@
     .btn-mypkg { background: #16a085; }     /* Teal */
     .btn-editpkg { background: #c0392b; }   /* Red */
 
+    footer {
+      background: #f1c40f;
+      color: #000;
+      width: 100%;
+      padding: 12px 0;
+      position: relative;
+      bottom: 0;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
     /* Mobile adjustments */
     @media (max-width: 480px) {
       h1 { font-size: 22px; }
+      .description { font-size: 14px; padding: 0 10px; }
       .btn { font-size: 16px; padding: 12px; }
     }
   </style>
@@ -76,8 +96,11 @@
   <h1>Masomo WiFi</h1>
 
   <div class="logo">
-    <!-- Replace src with your logo URL -->
     <img src="https://i.imgur.com/bcbZW7R.jpeg?text=Logo" alt="Masomo WiFi Logo">
+  </div>
+
+  <div class="description">
+    Masomo WiFi is an intuitive platform that empowers WiFi sellers to efficiently manage and sell access. Users can discover your WiFi network on their devices, and upon selection, they are seamlessly redirected to complete payment via M-Pesa and connect to their chosen package. Each seller can integrate multiple routers, maximizing coverage and accessibility for their customers.
   </div>
 
   <div class="btn-container">
@@ -88,6 +111,10 @@
     <a class="btn btn-editpkg" href="https://masomodigital.github.io/wifi-view-packages/">View/Edit Packages</a>
     <a class="btn btn-buy" href="https://script.google.com/macros/s/AKfycbyzVG18wFaaNQPwP1iTc7zPSGqxJ3u-ATQXnFOY7M6llzxPo4GmODNNf02e9jn7Y6bn/exec?router=R080393">Buy WiFi</a>
   </div>
+
+  <footer>
+    All rights reserved @ Masomo Digital Library
+  </footer>
 
 </body>
 </html>
